@@ -30,7 +30,8 @@
                 click: function () {
                   $(this).dialog('close');
                   // Expires in 1 year.
-                  $.cookie(index, '1', {expires: 3600 * 1000 * 24 * 365});
+                  var expire = new Date(new Date().getTime() + 3600 * 1000);
+                  $.cookie(index, '1', {expires: expire});
                 }
               },
               'No': {
