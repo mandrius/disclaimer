@@ -37,6 +37,7 @@
                 text: 'Decline',
                 click: function () {
                   $(this).dialog('close');
+                  // Redirect to somewhere?
                 }
               }
             }
