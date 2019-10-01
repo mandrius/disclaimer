@@ -1,0 +1,28 @@
+uuid: 07add25b-6aff-4be1-82cd-9f4beaab8a74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disclaimer
+    - node.type.article
+    - node.type.disclaimer
+id: node.article.field_disclaimer
+field_name: field_disclaimer
+entity_type: node
+bundle: article
+label: Disclaimer
+description: 'Select a disclaimer from the list if you want it to appear on this page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      disclaimer: disclaimer
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

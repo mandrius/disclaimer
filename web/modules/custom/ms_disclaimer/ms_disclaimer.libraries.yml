@@ -1,0 +1,9 @@
+ms_disclaimer:
+  js:
+    js/ms_disclaimer.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery
+    - core/jquery.cookie
+    - core/jquery.ui.dialog

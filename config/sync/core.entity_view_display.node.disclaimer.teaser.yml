@@ -1,0 +1,25 @@
+uuid: fa134b02-62d4-4c30-b97f-77a205efdead
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.disclaimer.field_disclaimer_text
+    - node.type.disclaimer
+  module:
+    - text
+    - user
+id: node.disclaimer.teaser
+targetEntityType: node
+bundle: disclaimer
+mode: teaser
+content:
+  field_disclaimer_text:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  links: true

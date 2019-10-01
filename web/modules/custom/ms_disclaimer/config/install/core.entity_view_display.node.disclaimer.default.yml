@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.disclaimer.field_disclaimer_text
+    - node.type.disclaimer
+  module:
+    - text
+    - user
+id: node.disclaimer.default
+targetEntityType: node
+bundle: disclaimer
+mode: default
+content:
+  field_disclaimer_text:
+    weight: 101
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

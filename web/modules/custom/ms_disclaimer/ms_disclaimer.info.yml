@@ -1,0 +1,9 @@
+name: 'Disclaimer'
+description: 'Custom disclaimer module.'
+package: Custom
+
+type: module
+core: 8.x
+
+dependencies:
+  - rabbit_hole
